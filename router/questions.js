@@ -1,13 +1,18 @@
 var express=require('express');
 let router=express.Router();
+var controller=require('../controller/index');
 
+ 
+router.post('/create', controller.addQuestion);
 
-router.post('/create', question);
+router.post('/:id/options/create',controller.addOption);
 
-router.post('/:id/options/create', question);
-router.get('/:id/delete', );
-router.get('/:id/add_vote', );
-router.get('/:id', );
+ 
+router.get('/:id/delete',controller.deleteQuestion);
+
+router.get('/:id/add_vote',controller.addVote);
+
+ router.get('/:id', controller.getQuestion );
 
 
  

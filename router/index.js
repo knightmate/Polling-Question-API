@@ -3,7 +3,8 @@ let router=express.Router();
 let question=require('./questions');
 
 
-router.post('/questions', question);
-//router.use('/question', question);
+router.use('/questions',question);
+ 
 
 module.exports=router;
+ 
