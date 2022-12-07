@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Meghraj1998/Polling-Question-API#readme",
   "dependencies": {
-    "body-parser": "^1.19.0"
+    "body-parser": "^1.20.1"
   }
 }
